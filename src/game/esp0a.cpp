@@ -122,7 +122,7 @@ void Esp0a_Trans(cEsp0a* pEsp)
                     } else {
                         wpos = e->m_Pos;
                     }
-                    AddOtWorldPos(e, Esp0a_Trans2, &wpos, ot, 0.0f);
+                    AddOtWorldPos(e, (void (*)(void*))Esp0a_Trans2, &wpos, ot, 0.0f);
                 }
                 if (!base->CommonMove()) {
                     break;

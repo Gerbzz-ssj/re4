@@ -21,6 +21,30 @@ tools/sn-gcc/obj/
 tools/sn-gcc/cc1
 tools/sn-gcc/cc1plus
 
+# PC port build output
+port/build*/
+port/out/
+port/*.log
+
+# Game data must never be committed: everyone supplies their own discs.
+# tools/check_no_game_data.py enforces this in CI for anything force-added.
+game-data/
+*.iso
+*.gcm
+*.ciso
+*.cso
+*.rvz
+*.wbfs
+*.nkit.*
+*.gcz
+*.wia
+*.tgc
+*.dol
+*.rel
+*.rar
+*.7z
+*.zip
+
 # external checkouts used by tools/research/mwccdbg (see its README)
 tools/research/mwccdbg/mwcc-debugger
 tools/research/mwccdbg/retrowin32
